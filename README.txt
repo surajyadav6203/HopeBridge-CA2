@@ -1,29 +1,32 @@
-HopeBridge CA2 - Separate Files
+# HopeBridge – Orphanage Wishlist & Birthday Meal Sponsorship
 
-Open this folder in VS Code and run index.html with Live Server.
+HopeBridge is a web-based platform designed to connect donors with orphanages. It allows orphanages to submit essential supply requests and birthday meal requests, while donors can show interest in fulfilling them.
 
-HTML files:
-- index.html
-- login.html
-- register.html
-- admin-dashboard.html
-- donor-dashboard.html
-- orphanage-dashboard.html
+## Live Website
+https://hopebridge-ca2.vercel.app/
 
-CSS files:
-- style.css (homepage)
-- auth.css (login and registration)
-- admin.css
-- donor.css
-- orphanage.css
+## Features
+- Donor, Orphanage and Admin login
+- Orphanage registration and verification
+- Essential supply wishlist requests
+- Birthday meal sponsorship requests
+- Admin approval and rejection system
+- Donor sponsorship interest
+- Request contact details after approval
+- Donation proof upload and verification
+- Request and sponsorship status tracking
 
-JavaScript files:
-- script.js (homepage impact statistics)
-- auth.js (login and registration)
-- admin.js
-- donor.js
-- orphanage.js
-- supabase.js (Supabase connection)
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- Supabase (Authentication, Database and Storage)
+- GitHub
+- Vercel
 
-Keep all these files in the same folder. Do not rename the files unless you also update their references in HTML.
-The Supabase publishable key is used in supabase.js. Never put a Supabase service-role/secret key in frontend code.
+## Project Purpose
+The main objective of HopeBridge is to provide a simple platform where donors can discover orphanage requirements and express their willingness to fulfil them.
+
+## Developed By
+**Team HopeBridge**
+
