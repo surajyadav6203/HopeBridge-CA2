@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | HopeBridge</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <header>
+        <h2>HopeBridge</h2>
+        <button class="logout" id="logoutBtn">Logout</button>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h1>Admin Dashboard</h1>
+            <p>Welcome, <span id="adminName">Admin</span></p>
+            <p>Manage orphanages, requests and donor sponsorship interests.</p>
+        </section>
+
+        <p id="mainMessage" class="message"></p>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Total Donors</p>
+                <h2 id="donorCount">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Total Orphanages</p>
+                <h2 id="orphanageCount">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Wishlist Requests</p>
+                <h2 id="wishlistCount">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Birthday Requests</p>
+                <h2 id="birthdayCount">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Pending Sponsorships</p>
+                <h2 id="sponsorshipCount">0</h2>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>Orphanage Verification</h2>
+                <button class="refresh-btn" data-refresh>Refresh</button>
+            </div>
+            <div id="orphanageList" class="request-list">
+                <p class="empty">Loading orphanages...</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>Essential Supply Requests</h2>
+                <button class="refresh-btn" data-refresh>Refresh</button>
+            </div>
+            <div id="wishlistList" class="request-list">
+                <p class="empty">Loading wishlist requests...</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>Birthday Meal Requests</h2>
+                <button class="refresh-btn" data-refresh>Refresh</button>
+            </div>
+            <div id="birthdayList" class="request-list">
+                <p class="empty">Loading birthday requests...</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <h2>Donor Sponsorship Requests</h2>
+                <button class="refresh-btn" data-refresh>Refresh</button>
+            </div>
+            <div id="sponsorshipList" class="request-list">
+                <p class="empty">Loading sponsorship requests...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="image-popup" id="imagePopup">
+        <button class="close-popup" id="closePopup">×</button>
+        <img id="fullImage" src="" alt="Full size image">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>

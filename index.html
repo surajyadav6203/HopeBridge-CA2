@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeBridge | Every Child Deserves A Reason To Smile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">HopeBridge</a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#wishlist">Wishlist</a>
+            <a href="#birthday">Birthday Meals</a>
+            <a href="#about">About Us</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-button">Join Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Every Child Deserves A Reason To Smile.</h1>
+                <p>Help orphanages receive essential supplies and make children's birthdays special through simple acts of kindness.</p>
+                <a href="register.html" class="main-button">Make a Difference</a>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="section-heading">
+                <h2>About HopeBridge</h2>
+                <p>Connecting people who want to help with orphanages that need support.</p>
+            </div>
+            <p class="about-text">
+                HopeBridge is a platform where verified orphanages can share their essential supply needs
+                and birthday meal requirements. Donors can explore approved requests, show their interest
+                and help fulfil those needs. Our goal is to make support simple, transparent and meaningful.
+            </p>
+        </section>
+
+        <section class="section impact" id="impact">
+            <div class="section-heading">
+                <h2>Our Impact So Far</h2>
+                <p>Every completed sponsorship brings support a little closer to the children who need it.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <h3 id="fulfilledCount">—</h3>
+                    <p>Successfully Fulfilled</p>
+                </div>
+                <div class="impact-card">
+                    <h3 id="pendingCount">—</h3>
+                    <p>Pending Requests</p>
+                </div>
+                <div class="impact-card">
+                    <h3 id="orphanageCount">—</h3>
+                    <p>Approved Orphanages</p>
+                </div>
+            </div>
+            <p class="impact-message" id="impactMessage">Loading latest impact...</p>
+        </section>
+
+        <section class="section" id="wishlist">
+            <div class="section-heading">
+                <h2>Essential Supply Wishlist</h2>
+                <p>Small essentials can make a big difference in a child's daily life.</p>
+            </div>
+            <div class="cards">
+                <article class="item-card">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=700" alt="School supplies">
+                    <div>
+                        <h3>School Bags</h3>
+                        <p>Help children carry their books and school essentials.</p>
+                    </div>
+                </article>
+                <article class="item-card">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=700" alt="Books and notebooks">
+                    <div>
+                        <h3>Books & Notebooks</h3>
+                        <p>Support learning with books, notebooks and stationery.</p>
+                    </div>
+                </article>
+                <article class="item-card">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=700" alt="Clothes">
+                    <div>
+                        <h3>Clothes & Shoes</h3>
+                        <p>Help provide comfortable clothes and footwear.</p>
+                    </div>
+                </article>
+                <article class="item-card">
+                    <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=700" alt="Hygiene essentials">
+                    <div>
+                        <h3>Hygiene Kits</h3>
+                        <p>Support children's everyday health and hygiene needs.</p>
+                    </div>
+                </article>
+            </div>
+            <div style="text-align:center; margin-top:30px;">
+                <a href="login.html" class="green-button">Explore Requests</a>
+            </div>
+        </section>
+
+        <section class="section birthday" id="birthday">
+            <div class="section-heading">
+                <h2>Birthday Meal Sponsorship</h2>
+                <p>Make a child's special day memorable with a birthday meal.</p>
+            </div>
+            <div class="birthday-box">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900" alt="Birthday cake">
+                <div>
+                    <h3>A Birthday Filled With Smiles</h3>
+                    <p>Your support can help an orphanage arrange a special meal and celebrate a child's birthday with happiness.</p>
+                    <a href="login.html" class="green-button">View Birthday Requests</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="how-it-works">
+            <div class="section-heading">
+                <h2>How It Works</h2>
+                <p>A simple process that connects verified needs with willing donors.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Orphanages Register</h3>
+                    <p>Orphanages create an account and submit their details for verification.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Requests Get Approved</h3>
+                    <p>Admins review orphanages and their supply or birthday meal requests.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Donors Help</h3>
+                    <p>Donors choose an approved request and coordinate fulfilment after admin approval.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>HopeBridge</h2>
+        <p>Connecting kindness with the needs of children.</p>
+        <p>© 2026 HopeBridge. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

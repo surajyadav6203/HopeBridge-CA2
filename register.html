@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | HopeBridge</title>
+    <link rel="stylesheet" href="auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Hope<span>Bridge.</span></a>
+            <a href="index.html" class="back-link">Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="auth-heading">
+                <span class="tag">JOIN OUR COMMUNITY</span>
+                <h1>Create Your Account</h1>
+                <p>Be a part of something meaningful.</p>
+            </div>
+
+            <form id="registerForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password" minlength="6" required>
+
+                <label for="role">Register As</label>
+                <select id="role" required>
+                    <option value="">Select account type</option>
+                    <option value="donor">Donor</option>
+                    <option value="orphanage">Orphanage</option>
+                </select>
+
+                <button type="submit" class="auth-submit">Create Account</button>
+                <p id="registerMessage" class="form-message"></p>
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </div>
+
+        <div class="auth-side">
+            <h2>Every helping hand<br>creates a little more hope.</h2>
+            <p>Join HopeBridge and help orphanages fulfil their essential needs and birthday meal requirements.</p>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7f5;
+            color: #26382e;
+        }
+
+        header {
+            background: white;
+            padding: 18px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5ebe6;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            color: #176b45;
+            font-size: 25px;
+        }
+
+        button {
+            border: none;
+            padding: 11px 17px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        .logout {
+            background: #fcebea;
+            color: #b33b35;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1300px;
+            margin: 30px auto;
+        }
+
+        .welcome {
+            background: linear-gradient(120deg, #176b45, #2d9563);
+            color: white;
+            padding: 35px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+        }
+
+        .welcome h1 {
+            font-size: 29px;
+            margin-bottom: 9px;
+        }
+
+        .welcome p {
+            color: #e4f5e9;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #e7eee8;
+            box-shadow: 0 3px 12px #00000008;
+        }
+
+        .section h2 {
+            color: #205d3d;
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        .request-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .request-card {
+            border: 1px solid #e4ebe5;
+            border-radius: 10px;
+            padding: 17px;
+            background: white;
+        }
+
+        .request-card img {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 13px;
+        }
+
+        .request-card h3 {
+            color: #205d3d;
+            font-size: 18px;
+            margin-bottom: 9px;
+        }
+
+        .request-card p {
+            color: #68766d;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .sponsor-btn {
+            background: #176b45;
+            color: white;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .status {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #fff3d8;
+            color: #936c12;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .approved {
+            background: #e4f5e9;
+            color: #176b45;
+        }
+
+        .rejected {
+            background: #fcebea;
+            color: #b33b35;
+        }
+
+        .completed {
+            background: #e7efff;
+            color: #315da8;
+        }
+
+        .empty {
+            color: #87938b;
+            font-size: 14px;
+        }
+
+        .message {
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 94%;
+            }
+
+            .welcome {
+                padding: 25px;
+            }
+
+            .welcome h1 {
+                font-size: 24px;
+            }
+
+            .section {
+                padding: 19px;
+            }
+
+            .request-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+.image-button {
+    width: 100%;
+    height: 145px;
+    background: #edf5ef;
+    color: #176b45;
+    border: 1px dashed #a9cbb4;
+    border-radius: 9px;
+    margin-bottom: 13px;
+    font-size: 15px;
+}
+
+.image-button:hover {
+    background: #e0f0e4;
+}
+
+.image-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.image-popup img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: white;
+    color: #222;
+    font-size: 22px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+
+        .contact-box {
+            margin-top: 14px;
+            padding: 14px;
+            background: #f1f8f3;
+            border: 1px solid #d7e9dc;
+            border-radius: 9px;
+        }
+
+        .contact-box h4 {
+            color: #205d3d;
+            margin-bottom: 8px;
+        }
+
+        .contact-box p {
+            margin: 5px 0;
+        }
+
+        .proof-form {
+            margin-top: 14px;
+            padding-top: 12px;
+            border-top: 1px solid #e4ebe5;
+        }
+
+        .proof-form input,
+        .proof-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 7px 0;
+            border: 1px solid #d8e4da;
+            border-radius: 7px;
+            background: #fbfdfb;
+        }
+
+        .proof-form button {
+            width: 100%;
+            background: #176b45;
+            color: white;
+            margin-top: 7px;
+        }
+
+        .proof-note {
+            color: #68766d;
+            font-size: 13px;
+            margin-top: 7px;
+        }

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orphanage Dashboard | HopeBridge</title>
+    <link rel="stylesheet" href="orphanage.css">
+</head>
+<body>
+
+    <header>
+        <h2>HopeBridge</h2>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h1>Welcome, <span id="orphanageName">Orphanage</span></h1>
+            <p>Manage your essential supply needs and birthday meal requests.</p>
+            <p id="profileStatus" class="message"></p>
+        </section>
+
+
+        <section class="section">
+            <h2>Add Essential Supply Request</h2>
+            <p class="message">Enter the caretaker responsible for this specific request.</p>
+
+            <form id="wishlistForm">
+                <input type="text" id="itemName" placeholder="Item name" required>
+
+                <textarea id="itemDescription" placeholder="Describe what you need" required></textarea>
+
+                <input type="number" id="itemQuantity" placeholder="Required quantity" min="1" required>
+
+                <label>Responsible caretaker name</label>
+                <input type="text" id="wishlistCaretakerName" placeholder="Caretaker full name" required>
+
+                <label>Caretaker contact number</label>
+                <input type="tel" id="wishlistCaretakerPhone" placeholder="Contact number" required>
+
+                <label>Caretaker email</label>
+                <input type="email" id="wishlistCaretakerEmail" placeholder="Contact email address" required>
+
+                <label>Upload item image</label>
+                <input type="file" id="itemImage" accept="image/png,image/jpeg,image/webp">
+
+                <button type="submit">Submit Wishlist Request</button>
+            </form>
+
+            <p id="wishlistMessage" class="message"></p>
+        </section>
+
+        <section class="section">
+            <h2>Add Birthday Meal Request</h2>
+            <p class="message">Enter the caretaker responsible for this specific birthday request.</p>
+
+            <form id="birthdayForm">
+                <input type="text" id="birthdayTitle" placeholder="Request title" required>
+
+                <textarea id="birthdayDescription" placeholder="Describe the birthday meal plan" required></textarea>
+
+                <label>Birthday meal date</label>
+                <input type="date" id="mealDate" required>
+
+                <input type="number" id="childrenCount" placeholder="Number of children" min="1" required>
+
+                <input type="number" id="estimatedCost" placeholder="Estimated cost in ₹" min="1" required>
+
+                <label>Responsible caretaker name</label>
+                <input type="text" id="birthdayCaretakerName" placeholder="Caretaker full name" required>
+
+                <label>Caretaker contact number</label>
+                <input type="tel" id="birthdayCaretakerPhone" placeholder="Contact number" required>
+
+                <label>Caretaker email</label>
+                <input type="email" id="birthdayCaretakerEmail" placeholder="Contact email address" required>
+
+                <label>Upload meal image</label>
+                <input type="file" id="birthdayImage" accept="image/png,image/jpeg,image/webp">
+
+                <button type="submit">Submit Birthday Request</button>
+            </form>
+
+            <p id="birthdayMessage" class="message"></p>
+        </section>
+
+        <section class="section">
+            <h2>My Wishlist Requests</h2>
+            <div id="wishlistList" class="request-list">
+                <p class="empty">Loading requests...</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>My Birthday Requests</h2>
+            <div id="birthdayList" class="request-list">
+                <p class="empty">Loading requests...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="image-popup" id="imagePopup">
+        <button class="close-popup" id="closePopup">×</button>
+        <img id="fullImage" src="" alt="Full size request image">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+
+    <script src="orphanage.js"></script>
+
+</body>
+</html>

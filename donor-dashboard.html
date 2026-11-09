@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Dashboard | HopeBridge</title>
+    <link rel="stylesheet" href="donor.css">
+</head>
+<body>
+
+    <header>
+        <h2>HopeBridge</h2>
+        <button class="logout" id="logoutBtn">Logout</button>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h1>Welcome, <span id="donorName">Donor</span></h1>
+            <p>Discover requests and make a difference in children's lives.</p>
+        </section>
+
+        <p id="mainMessage" class="message"></p>
+
+        <section class="section">
+            <h2>Essential Supply Wishlist</h2>
+            <div id="wishlistList" class="request-list">
+                <p class="empty">Loading requests...</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Birthday Meal Sponsorship</h2>
+            <div id="birthdayList" class="request-list">
+                <p class="empty">Loading requests...</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>My Sponsorships</h2>
+            <div id="sponsorshipList" class="request-list">
+                <p class="empty">Loading sponsorships...</p>
+            </div>
+        </section>
+
+    </main>
+    
+<div class="image-popup" id="imagePopup">
+    <button class="close-popup" id="closePopup">×</button>
+    <img id="fullImage" src="" alt="Full size request image">
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+
+    <script src="donor.js"></script>
+
+</body>
+</html>
